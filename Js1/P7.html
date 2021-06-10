@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function chColor() {
+            var col = frmColor.color.value;
+            document.bgColor = col;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmColor">
+        <center>
+            Select Color : 
+            <select name="color" onchange="chColor()">
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+            var stud = frmTest.student.value;
+            document.getElementById("result").innerHTML = stud;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmTest">
+        <center>
+            Select Name : 
+            <select name="student" onchange="show()">
+                <option value="Ranjit">Ranjit</option>
+                <option value="Hari">Hari</option>
+                <option value="Shiva Teja">Shiva</option>
+                <option value="Swapneel Kumar">Swapneel</option>
+                <option value="Vamshi Charan">Vamshi</option>
+            </select> <br/><br/>
+            <span id="result"></span>
+        </center>
+    </form>
+</body>
+</html>
