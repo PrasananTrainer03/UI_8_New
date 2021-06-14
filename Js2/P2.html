@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function calc() {
+            var qty = parseInt(frmStock.quantity.value);
+            var price = Number(frmStock.price.value);
+            var total = price * qty;
+            frmStock.billAmount.value = total;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmStock">
+        <table border="3" align="center">
+            <tr>
+                <th colspan="2">
+                    Stock Form
+                </th>
+            </tr>
+            <tr>
+                <th>Stock Id</th>
+                <td>
+                    <input type="number" name="stockId" />
+                </td>
+            </tr>
+            <tr>
+                <th>Item Name</th>
+                <td>
+                    <select name="itemName">
+                        <option value="Books">Books</option>
+                        <option value="Pens">Pens</option>
+                        <option value="Mobiles">Mobiles</option>
+                        <option value="Laptops">Laptops</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td>
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>
+                    <input type="number" name="price" />
+                </td>
+            </tr>
+            <tr>
+                <th>Bill Amount</th>
+                <td>
+                    <input type="number" name="billAmount" readonly />
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Show" onclick="calc()" />
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

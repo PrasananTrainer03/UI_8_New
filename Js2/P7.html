@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        var names = new Array("Hari", "Jeevan", "Ranjit", "Shiva", "Swapneel", "Vamshi", "Vimal", "Yamini");
+        var i = 0;
+        var count = names.length;
+        function show() {
+            document.getElementById("name").innerHTML = names[i];
+        }
+        function next() {
+            i++;
+            if (i == count) {
+                i = count - 1;
+                alert("No More values after this...");
+            }
+            show();
+        }
+        function previous() {
+            i--;
+            if (i < 0) {
+                i = 0;
+                alert("No More values before this...");
+            }
+            show();
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="show()">
+    <p id="name"></p>
+    <br/><br/> 
+    <input type="button" value="Next" onclick="next()" /> &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Previous" onclick="previous()" />
+</body>
+</html>

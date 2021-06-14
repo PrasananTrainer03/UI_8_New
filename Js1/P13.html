@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+            var msg = "Welcome to JavaScript Programming...Trainer Prasanna...";
+            var result = "";
+            result += "Lenght of given string is  " + msg.length + "<br/>";
+            result += "First Occurrence of char 'o'  " + msg.indexOf("o") + "<br/>";
+            result += "Last Occurrence of Char 'o' is  " + msg.lastIndexOf("o") + "<br/>";
+            result += "Char at 5th position  " + msg.charAt(5) + "<br/>";
+            result += "Upper Case String is  " + msg.toUpperCase() + "<br/>";
+            result += "Lower Case String is  " + msg.toLowerCase() + "<br/>";
+            result += "Part of the String is  " + msg.substr(10, 15) + "<br/>";
+            result += "Replaced String is  " + msg.replace("JavaScript", "UI") + "<br/>";
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="show()">
+    <span id="result"></span>
+</body>
+</html>

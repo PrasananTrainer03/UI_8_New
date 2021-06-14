@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+            var result = "";
+            var names = new Array("Hari", "Jeevan", "Ranjit", "Shiva", "Swapneel", "Vamshi", "Vimal", "Yamini");
+            for (var v in names) {
+                result += names[v] + "  ";
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="show()">
+    <span id="result"></span>
+</body>
+</html>

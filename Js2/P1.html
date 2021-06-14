@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function calc() {
+            var result = "";
+            var radius = Number(frmCircle.radius.value);
+            var area, circ;
+            area = 3.14 * radius * radius;
+            circ = 2 * 3.14 * radius;
+            result += "Area of Circle  " + area + "<br/><br/>";
+            result += "Circumference is  " + circ + "<br/><br/>";
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmCircle">
+        <center>
+            Radius : 
+            <input type="number" name="radius" /> <br/> <br/> 
+            <input type="button" value="Calc" onclick="calc()" /> <br/><br/> 
+            <span id="result"></span>
+        </center>
+    </form>
+</body>
+</html>

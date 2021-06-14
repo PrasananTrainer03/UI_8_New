@@ -1,0 +1,23 @@
+﻿a:link {
+    color: #FF0000;
+}
+
+a:visited {
+    color: #00FF00;
+}
+
+a:hover {
+    color: #FF00FF;
+}
+
+a:active {
+    color: #0000FF;
+}
+div {
+    border : double;
+    border-block:double;
+    height:500px;
+    width :500px;
+    margin-top:100px;
+    margin-left:300px;
+}

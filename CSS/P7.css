@@ -1,0 +1,22 @@
+﻿body {
+    color: red;
+    background-color:maroon;
+}
+p {
+    background-color: blue;
+    color: maroon;
+    font-size: 36px;
+    font-family: 'Lucida Console';
+    font-style: italic;
+    text-align: center;
+}
+
+div {
+    background-color: red;
+    color: orange;
+}
+
+span {
+    background-color: brown;
+    color: chocolate;
+}

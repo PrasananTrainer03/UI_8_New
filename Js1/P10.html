@@ -2,8 +2,25 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <style>
+        span#err1, span#err2 {
+            color:red;
+        }
+    </style>
     <script>
         function sub() {
+            if (frmCalc.firstNo.value == "") {
+                document.getElementById("err1").innerHTML = "Please Enter First Number...";
+                return;
+            } else {
+                document.getElementById("err1").innerHTML = "";
+            }
+            if (frmCalc.secondNo.value == "") {
+                document.getElementById("err2").innerHTML = "Please Enter Second Number...";
+                return;
+            } else {
+                document.getElementById("err2").innerHTML = "";
+            }
             var firstNo, secondNo, result;
             firstNo = frmCalc.firstNo.value;
             secondNo = frmCalc.secondNo.value;
@@ -34,12 +51,14 @@
                 <th>First Number</th>
                 <td>
                     <input type="number" name="firstNo" />
+                    <span id="err1"></span>
                 </td>
             </tr>
             <tr>
                 <th>Second Number</th>
                 <td>
                     <input type="number" name="secondNo" />
+                    <span id="err2"></span>
                 </td>
             </tr>
             <tr>

@@ -1,0 +1,23 @@
+﻿body
+{
+    background-color:maroon;
+}
+p {
+    font-family:Tahoma;
+    font-size:36pt;
+    color:blue;
+    margin-left:125pt;
+}
+h1 {
+    font-family:'Lucida Console';
+    font-size:42pt;
+    color:red;
+    margin-left:220pt;
+}
+h3 {
+    font-family:Arial;
+    font-size:35pt;
+    border: double;
+    color:green;
+    margin-left:155pt;
+}

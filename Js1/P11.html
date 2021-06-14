@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        span#err1, span#err2 {
+            color:red;
+        }
+    </style>
+    <script>
+        function show() {
+            if (frmData.firstName.value == "") {
+                document.getElementById("err1").innerHTML = "Please Enter First Name...";
+                return;
+            } else {
+                document.getElementById("err1").innerHTML = "";
+            }
+            if (frmData.lastName.value == "") {
+                document.getElementById("err2").innerHTML = "Please Enter Last Name...";
+                return;
+            } else {
+                document.getElementById("err2").innerHTML = "";
+            }
+            var firstName = frmData.firstName.value;
+            var lastName = frmData.lastName.value;
+            var fullName = firstName + " " + lastName;
+            frmData.fullName.value = fullName;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmData">
+        <table border="3" align="center">
+            <tr>
+                <th colspan="2">
+                    Name Form
+                </th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td>
+                    <input type="text" name="firstName" onblur="show()" />
+                    <span id="err1"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>
+                    <input type="text" name="lastName" onblur="show()" />
+                    <span id="err2"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Full Name</th>
+                <td>
+                    <input type="text" name="fullName" readonly />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

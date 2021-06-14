@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function dateDemo() {
+            var obj = new Date();
+            var month = obj.getMonth();
+            var year = obj.getFullYear();
+            var hrs = obj.getHours();
+            var mins = obj.getMinutes();
+            var seconds = obj.getSeconds();
+            month++;
+            var result = "";
+            result += "Today's Date is   " + obj.getDate() + "<br/>";
+            result += "Month is  " + month + "<br/>";
+            result += "Year is   " + year + "<br/>";
+            result += "Hours  " + hrs + "<br/>";
+            result += "Minutes  " + mins + "<br/>";
+            result += "Seconds   " + seconds + "<br/>";
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="dateDemo()">
+    <span id="result"></span>
+</body>
+</html>
