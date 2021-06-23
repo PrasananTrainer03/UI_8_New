@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function load() {
+            var news = new Array("1. Spots News", "2. Main Page", "3. Academic ", "4. Classfieds")
+            var len = news.length;
+            document.getElementById("news").innerHTML = len;
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="load()">
+	<div class="container">
+         <h2>Badges</h2>
+    	  <a href="P1.html">News <span class="badge" id="news"></span></a><br>
+          <a href="P2.html">Comments <span class="badge">10</span></a><br>
+          <a href="P3.html">Updates <span class="badge">2</span></a>
+    </div>
+</body>
+</html>
