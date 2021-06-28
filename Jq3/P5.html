@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            var result = "";
+            $("#chkSwapneel, #chkVamshi").change(function () {
+                result = "";
+                if ($('#chkSwapneel').is(":checked") == true) {
+                    result += "Swapneel is Present today...\n";
+                } else {
+                    result += "Swapneel is Absent Today...\n";
+                }
+                if ($('#chkVamshi').is(":checked") == true) {
+                    result += "Vamshi is Present Today...\n";
+                } else {
+                    result += "Vamshi is Absent Today...\n";
+                }
+                $("#result").text(result);
+            })
+        });
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Swapneel :
+    <input type="checkbox" name="chkSwapneel" id="chkSwapneel" />
+    Vamshi Charan :
+    <input type="checkbox" name="chkVamshi" id="chkVamshi" />
+    <span id="result">See Result Here</span>
+</body>
+</html>
